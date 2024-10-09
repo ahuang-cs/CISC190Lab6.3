@@ -3,6 +3,8 @@ package edu.sdccd.cisc190.character;
 import edu.sdccd.cisc190.weapon.Weapon;
 
 abstract public class Character {
+    public static final int NUM_CHARACTERS = 3;
+
     public final String name;
     private Weapon weapon;
     private int healthPoints;

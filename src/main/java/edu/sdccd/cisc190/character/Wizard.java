@@ -6,11 +6,13 @@ import edu.sdccd.cisc190.weapon.Weapon;
 public class Wizard extends Character {
     private int magicPoints;
     private int enchantWeaponPoints;
+    private int enchantWeaponBonus;
 
-    public Wizard(String name, int healthPoints, int strengthPoints, int defensePoints, Staff staff, int magicPoints, int enchantWeaponPoints) {
+    public Wizard(String name, int healthPoints, int strengthPoints, int defensePoints, Staff staff, int magicPoints, int enchantWeaponPoints, int enchantWeaponBonus) {
         super(name, healthPoints, strengthPoints, defensePoints, staff);
         this.magicPoints = magicPoints;
         this.enchantWeaponPoints = enchantWeaponPoints;
+        this.enchantWeaponBonus = enchantWeaponBonus;
     }
 
     @Override
