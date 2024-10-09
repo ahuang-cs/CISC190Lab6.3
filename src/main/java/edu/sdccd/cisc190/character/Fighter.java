@@ -1,15 +1,11 @@
 package edu.sdccd.cisc190.character;
 
-import edu.sdccd.cisc190.weapon.Weapon;
+import edu.sdccd.cisc190.weapon.Blade;
 
 public class Fighter extends Character {
 
-    public Fighter(String name, Weapon weapon, int healthPoints, int strengthPoints, int defensePoints) {
-        super(name, weapon, healthPoints, strengthPoints, defensePoints);
-    }
-
-    public Fighter(String name) {
-        super(name);
+    public Fighter(String name, int healthPoints, int strengthPoints, int defensePoints, Blade blade) {
+        super(name, healthPoints, strengthPoints, defensePoints, blade);
     }
 
     @Override

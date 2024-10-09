@@ -7,14 +7,10 @@ public class Wizard extends Character {
     private int magicPoints;
     private int enchantWeaponPoints;
 
-    public Wizard(String name, Staff staff, int healthPoints, int strengthPoints, int defensePoints, int magicPoints, int enchantWeaponPoints) {
-        super(name, staff, healthPoints, strengthPoints, defensePoints);
+    public Wizard(String name, int healthPoints, int strengthPoints, int defensePoints, Staff staff, int magicPoints, int enchantWeaponPoints) {
+        super(name, healthPoints, strengthPoints, defensePoints, staff);
         this.magicPoints = magicPoints;
         this.enchantWeaponPoints = enchantWeaponPoints;
-    }
-
-    public Wizard(String name) {
-        super(name);
     }
 
     @Override
@@ -25,6 +21,6 @@ public class Wizard extends Character {
     }
 
     public void equip(Staff staff) {
-        this.we
+        this.setWeapon(staff);
     }
 }
